@@ -1,10 +1,27 @@
 import { LucideIcon } from "lucide-react";
 
 /**
- * Interface para descrever os detalhes da seção "Sobre".
+ * Interface que define os detalhes da seção "Sobre".
  */
 export interface AboutDetail {
-  icon: LucideIcon; // Componente do ícone
-  title: string; // Título do detalhe
-  description: string; // Descrição do detalhe
+  /**
+   * Componente do ícone que representa visualmente o detalhe.
+   */
+  icon: LucideIcon;
+
+  /**
+   * Título do detalhe, usado como cabeçalho do card.
+   */
+  title: string;
+
+  /**
+   * Descrição detalhada do detalhe.
+   */
+  description: string;
+
+  /**
+   * Identificador único do detalhe.
+   * Útil para renderizações dinâmicas e manutenções futuras.
+   */
+  id: number;
 }

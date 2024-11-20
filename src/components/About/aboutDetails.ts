@@ -4,11 +4,11 @@ import { AboutDetail } from "./aboutDetails.types";
 /**
  * Lista de detalhes sobre a seção "Sobre".
  * 
- * Cada item inclui:
- * - id: Identificador único do item (útil para renderizações dinâmicas).
- * - icon: Ícone representando o detalhe.
- * - title: Título do detalhe.
- * - description: Descrição do detalhe.
+ * Cada item contém:
+ * - `id`: Identificador único do item.
+ * - `icon`: Ícone representando o detalhe.
+ * - `title`: Título do detalhe.
+ * - `description`: Descrição detalhada.
  */
 export const aboutDetails: AboutDetail[] = [
   {
