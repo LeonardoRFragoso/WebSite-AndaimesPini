@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { products } from "./ProductsData"; // Dados centralizados em um arquivo separado
+import { products } from "./ProductsData";
 
 const Products: React.FC = () => {
   return (
@@ -11,8 +11,8 @@ const Products: React.FC = () => {
       aria-labelledby="products-title"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Título da seção */}
-        <div className="text-center mb-16">
+        {/* Título da Seção */}
+        <div className="text-center mb-12">
           <h2
             id="products-title"
             className="text-3xl font-bold text-primary mb-4"
@@ -25,13 +25,14 @@ const Products: React.FC = () => {
           </p>
         </div>
 
-        {/* Grid dos produtos */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Grid de Produtos */}
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
             <ProductCard
               key={product.name}
               name={product.name}
               description={product.description}
+              href={product.href} // Link opcional
             />
           ))}
         </div>
